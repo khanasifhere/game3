@@ -1,0 +1,20 @@
+.grid{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    width: 500px;
+    flex-wrap: wrap;
+}
+.turn{
+    color: white;
+}
+.reset{
+    background-color: rgb(138, 237, 201);
+    padding: 14px;
+    border: 3px solid rgb(233, 11, 166);
+    border-radius: 20px;
+}
+.reset:hover{
+    background-color: aquamarine;
+    border: 3px solid blueviolet;
+}
