@@ -29,7 +29,7 @@ function Grid({numberOfCards}){
         const win = IsWinner(board, winningPlayer);
         if(win)
             {SetWinner(winningPlayer);
-             toast.success(`Congratulations ${ Winner } won the game`);
+             toast.success(`Congratulations ${ winningPlayer } won the game`);
             }
         setboard([...board]);
         setturn(!turn);
