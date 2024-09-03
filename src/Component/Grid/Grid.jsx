@@ -25,10 +25,11 @@ function Grid({numberOfCards}){
             board[index]='O';
         else board[index]='X';
         
-        const win=IsWinner(board,turn? 'O':'X');
+        const winningPlayer = turn ? 'O' : 'X';
+        const win = IsWinner(board, winningPlayer);
         if(win)
-            {SetWinner(win);
-             toast.success(`Congratulations ${Winner } won the game`);
+            {SetWinner(winningPlayer);
+             toast.success(`Congratulations ${ Winner } won the game`);
             }
         setboard([...board]);
         setturn(!turn);
